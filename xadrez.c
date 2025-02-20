@@ -17,8 +17,9 @@ int main() {
 
     int i_bispo = 1;
 
-    while(i_bispo <= max_bispo) {
-        printf("Bispo - Diagonal Superior Direita: %d\n", i_bispo);
+    while(i_bispo <= max_bispo)
+    {
+        printf("Bispo - Diagonal Superior Direita\n");
         i_bispo++;
     }
 
@@ -28,20 +29,32 @@ int main() {
     int i_torre = 1;
 
     do {
-        printf("Torre - Direita: %d\n", i_torre);
+        printf("Torre - Direita\n");
         i_torre++;
     } while(i_torre <= max_torre);
 
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
-    for(int i_rainha = 1; i_rainha <= max_rainha; i_rainha++) {
-        printf("Rainha - Esquerda: %d\n", i_rainha);
+    for(int i_rainha = 1; i_rainha <= max_rainha; i_rainha++)
+    {
+        printf("Rainha - Esquerda\n");
     }
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+    int movimentoCompleto = 1;
+
+    while(movimentoCompleto--)
+    {
+        for (int i_cavalo = 0; i_cavalo < 2; i_cavalo++)
+        {
+            printf("Cavalo - Baixo\n"); // dois movimentos para baixo
+        }
+        printf("Cavalo - Esquerda\n"); // um movimento para esquerda
+    }
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
